@@ -46,7 +46,7 @@ fn main() {
     let mut successful_rounds = 0;
     let total_rounds = 100;
     
-    for round in 0..total_rounds {
+    for _round in 0..total_rounds {
         if injector.should_intercept(0) {
             // Fault injected
             use sublinear_bft_scifest::fault_injector::FaultType;

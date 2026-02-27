@@ -63,8 +63,10 @@ impl FaultInjector {
     /// Create an equivocating vertex (two conflicting proposals)
     pub fn create_equivocation(&self, original: &Vertex) -> Vertex {
         let mut conflicting = original.clone();
-        // Modify the payload to create a conflicting vertex
-        conflicting.payload = format!("BYZANTINE_PAYLOAD_{}", rand::thread_rng().gen::<u64>()).into_bytes();
+        // Modify the batch_hash to create a conflicting vertex
+        let mut new_hash = original.batch_hash;
+        new_hash[0] = rand::thread_rng().gen::<u8>(); // Flip first byte
+        conflicting.batch_hash = new_hash;
         conflicting
     }
     
