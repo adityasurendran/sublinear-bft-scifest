@@ -1,0 +1,61 @@
+use aether_rs::consensus::ConsensusState;
+use aether_rs::types::{Event, Vertex};
+use std::time::{Instant};
+use std::env;
+
+#[tokio::main]
+async fn main() {
+    let args: Vec<String> = env::args().collect();
+    
+    if args.contains(&"--bench-cpu-ceiling".to_string()) {
+        run_cpu_ceiling_bench();
+        return;
+    }
+
+    println!("Aether-V2 Consensus Engine [PHASE 5 - SAFETY HARDENED]");
+    println!("Structural safeguards implemented:");
+    println!("1. Explicit CertifiedVertex type enforced.");
+    println!("2. Strict Parent Rule enforced (n-f, certified, distinct).");
+    println!("3. Deterministic Hash-based VRF Seed derivation.");
+    println!("4. SkipCert aggregation and Mutual Exclusion logic scaffolded.");
+    println!("5. Single-threaded deterministic consensus loop structure.");
+}
+
+fn run_cpu_ceiling_bench() {
+    println!("--- Aether-V2 CPU THROUGHPUT CEILING BENCHMARK ---");
+    let n = 100;
+    let mut state = ConsensusState::new(0, n);
+    
+    // Warmup
+    println!("Warming up...");
+    for i in 0..1000 {
+        let v = Vertex {
+            round: i,
+            author: (i % n as u64) as u32,
+            batch_hash: [0u8; 32],
+            parents: vec![],
+        };
+        state.on_event(Event::VertexReceived(v));
+    }
+
+    let iterations = 100_000;
+    println!("Running {} iterations...", iterations);
+    let start = Instant::now();
+    for i in 0..iterations {
+        let v = Vertex {
+            round: i as u64,
+            author: (i % n) as u32,
+            batch_hash: [0u8; 32],
+            parents: vec![],
+        };
+        state.on_event(Event::VertexReceived(v));
+    }
+    let duration = start.elapsed();
+    let tps = iterations as f64 / duration.as_secs_f64();
+    
+    println!("--------------------------------------------------");
+    println!("Benchmark Complete.");
+    println!("Total Time: {:?}", duration);
+    println!("Throughput: {:.2} events/sec", tps);
+    println!("--------------------------------------------------");
+}

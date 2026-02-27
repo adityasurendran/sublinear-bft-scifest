@@ -1,0 +1,37 @@
+[package]
+name = "sublinear-bft-scifest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.36", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bincode = "1.3"
+rkyv = { version = "0.7", features = ["validation"] }
+bytecheck = "0.6"
+blake3 = "=1.5.0"
+base64ct = "=1.6.0"
+ed25519-dalek = "=2.0.0"
+rand = "0.8"
+rayon = "=1.8.0"
+rayon-core = "=1.12.0"
+quinn = "=0.10.0"
+futures = "0.3"
+async-trait = "0.1"
+bytes = "1.5"
+core_affinity = "0.8"
+parking_lot = "0.12"
+once_cell = "1.19"
+
+# Phase E.4: BLS12-381 Signature Aggregation
+blst = "0.3"
+group = "0.13"
+subtle = "2.5"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bin]]
+name = "aether-rs-e4"
+path = "src/main_e4.rs"
