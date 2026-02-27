@@ -14,6 +14,11 @@ This project presents a novel implementation of a Byzantine Fault Tolerant (BFT)
 3. **Bounded Pipeline**: A credit-based flow control system prevents "verification debt" and ensures bounded latency even under high cryptographic load.
 4. **Hardware Acceleration**: Optimized kernels for x86 (AVX2/VNNI) provide an 18x speedup in pairing operations compared to standard ARM implementations.
 
+## Advanced Features (SciFest Additions)
+5. **Multi-Region Geo-Latency Simulation**: Real-world network modeling across 8 global regions (USA, EU, Asia, South America, Africa) with validated latency matrices based on AWS inter-region ping data.
+6. **Byzantine Fault Injection & Resilience Testing**: Comprehensive fault injection framework simulating message drops, delays, and equivocation attacks with Mean Time To Recovery (MTTR) metrics.
+7. **ML-Based Adaptive Batching**: Dynamic batch size optimization using EWMA-based latency prediction, with future upgrade path to LSTM/CNN neural networks for enhanced adaptivity.
+
 ## Performance Metrics (Validated)
 | Validators ($n$) | Latency (p99) | Throughput (VPS) | Network Conditions |
 | :--- | :--- | :--- | :--- |
@@ -23,3 +28,16 @@ This project presents a novel implementation of a Byzantine Fault Tolerant (BFT)
 
 ## Conclusion
 By shifting the bottleneck of BFT consensus from network bandwidth to local cryptographic computation—which can be hardware-accelerated—we provide a path toward truly scalable, global-scale decentralized infrastructure.
+
+## Demo & Validation
+Run the comprehensive feature demonstration:
+```bash
+cargo run --example feature_demo
+```
+
+Run the benchmark suite:
+```bash
+cargo bench --bench scifest_features_bench
+```
+
+For detailed feature documentation, see `SCIFEST_FEATURES_SUMMARY.md` and `FEATURES_ROADMAP.md`.
