@@ -154,7 +154,7 @@
 | Africa inclusion | ❌ Too far | ✅ Validated | Sublyne |
 | Settlement time | 2-3 days | 5-10 minutes | Sublyne (400×) |
 | Fee reduction | 30% | 40% | Sublyne |
-| Annual savings | $178B | $267B | Sublyne |
+| Annual savings | $15B | $25B | Sublyne |
 
 **Verdict**: Only Sublyne validates under **extreme intercontinental latency**.
 
@@ -258,14 +258,14 @@ Sublyne builds on established research:
 
 ### The 30-Second Pitch
 
-> *"Every blockchain consensus protocol today faces a fundamental limit: as you add more validators, the bandwidth required grows linearly. This makes global distribution impossible. Sublyne solves this using a 20-year-old mathematical breakthrough (BLS signatures) that nobody has fully implemented for consensus. We aggregate hundreds of signatures into one fixed-size certificate—88 bytes regardless of validator count. This isn't an incremental improvement; it's a fundamental shift from O(n) to O(1). The result? 2× better scaling, 14.5× smaller certificates, and the ability to distribute validators across continents without bandwidth collapse. For migrant workers sending money home, this means 40% lower fees—$267 billion per year in savings. We didn't just make consensus faster; we made it globally accessible."*
+> *"Every blockchain consensus protocol today faces a fundamental limit: as you add more validators, the bandwidth required grows linearly. This makes global distribution impossible. Sublyne solves this using a 20-year-old mathematical breakthrough (BLS signatures) that nobody has fully implemented for consensus. We aggregate hundreds of signatures into one fixed-size certificate—88 bytes regardless of validator count. This isn't an incremental improvement; it's a fundamental shift from O(n) to O(1). The result? 2× better scaling, 14.5× smaller certificates, and the ability to distribute validators across continents without bandwidth collapse. For migrant workers sending money home, this means 60% lower fees—$25 billion per year in savings. We didn't just make consensus faster; we made it globally accessible."*
 
 ### The 5-Minute Deep Dive
 
 1. **Problem**: O(n) certificate growth limits validator distribution
 2. **Solution**: BLS12-381 aggregation achieves O(1) certificates
 3. **Validation**: 270 VPS at n=20, 280ms max latency, 27% scaling cost
-4. **Impact**: $267B/year savings for migrant workers via L2 rollups
+4. **Impact**: $25B/year savings for migrant workers via L2 rollups
 5. **Moat**: Competitors cannot copy without protocol-breaking changes
 6. **Future**: Post-quantum ready, scales to n=10,000+ validators
 

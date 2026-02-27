@@ -172,9 +172,9 @@ Use this data to create charts for your presentation board.
 **Infographic Elements**:
 - 🌍 **280 million** migrant workers worldwide
 - 💰 **$669 billion** sent annually in remittances (World Bank 2024)
-- 📉 **6-10%** current average fees
-- ✅ **2-4%** achievable with Sublyne L2
-- 💵 **$267 billion/year** saved for low-income families
+- 📉 **6.3%** current average fees ($42B/year total)
+- ✅ **2.5%** achievable with Sublyne L2 ($17B/year)
+- 💵 **$25 billion/year** saved for low-income families
 
 **Visual**: World map with money flow arrows (Global South → North)
 

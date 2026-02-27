@@ -9,7 +9,7 @@ This project presents a novel implementation of a Byzantine Fault Tolerant (BFT)
 
 **Solution**: Sublyne enables **20+ globally distributed sequencers** across continents (USA, EU, Asia, South America) without bandwidth collapse, reducing settlement time from days to minutes and cutting fees by 40%.
 
-**Impact**: 280 million migrant workers worldwide send $669 billion annually (World Bank 2024). A 40% fee reduction saves **$267 billion/year** for low-income families.
+**Impact**: 280 million migrant workers worldwide send $669 billion annually (World Bank 2024). Current fees average 6.3% ($42B/year). Sublyne-enabled L2 rollups can reduce fees to 2.5%, saving **$25 billion/year** for low-income families.
 
 **Why Sublyne**: Only BLS aggregation achieves $O(1)$ certificates, making global sequencer distribution economically viable.
 
