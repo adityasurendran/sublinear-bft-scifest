@@ -178,7 +178,7 @@ Use this data to create charts for your presentation board.
 
 **Visual**: World map with money flow arrows (Global South → North)
 
-**Key Insight**: "Sublyne's technical breakthrough translates to $267B/year savings for families who need it most."
+**Key Insight**: "Sublyne's technical breakthrough translates to $25B/year savings for families who need it most."
 
 ---
 

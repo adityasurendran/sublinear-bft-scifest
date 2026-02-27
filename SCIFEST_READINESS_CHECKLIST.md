@@ -36,7 +36,7 @@
 
 ### Required Documents
 - [x] **README.md** - Abstract, Methods, Results, Conclusion
-- [x] **Named Beneficiary** - Migrant workers & L2 rollups ($267B/year impact)
+- [x] **Named Beneficiary** - Migrant workers & L2 rollups ($25B/year impact)
 - [x] **FEATURES_ROADMAP.md** - Complete feature plan
 - [x] **SCIFEST_FEATURES_SUMMARY.md** - Technical details
 - [x] **PROJECT_STATUS.md** - Current status & metrics
@@ -112,7 +112,7 @@ A: "Valid concern. BLS12-381 is broken by sufficiently large quantum computers (
 ### Impact Questions
 
 **Q: "Who benefits from this technology?"**  
-A: "280 million migrant workers sending $669B/year in remittances. Current fees are 6-10%. Sublyne-enabled L2 rollups can reduce this to 2-4%, saving $267B/year for low-income families."
+A: "280 million migrant workers send $669B/year in remittances at 6.3% average fees ($42B/year lost). Sublyne-enabled L2 rollups can reduce fees to 2.5%, saving $25B/year for low-income families."
 
 **Q: "Why should judges care about consensus protocols?"**  
 A: "Consensus is the foundation of all blockchain systems. Improving it from O(n) to O(1) is like upgrading from dial-up to broadband—enables entirely new applications (global L2s, cross-border payments, decentralized identity) that were previously impossible."

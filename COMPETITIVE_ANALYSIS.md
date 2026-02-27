@@ -10,7 +10,7 @@
 
 **The Sublyne Solution**: **BLS12-381 signature aggregation** achieves **$O(1)$ certificate sizes** (88 bytes fixed), shifting the bottleneck from network bandwidth (uncontrollable) to CPU computation (acceleratable).
 
-**The Result**: 2× better scaling, 14.5× smaller certificates, global validator distribution, and $267B/year savings for migrant workers via decentralized L2 rollups.
+**The Result**: 2× better scaling, 14.5× smaller certificates, global validator distribution, and $25B/year savings for migrant workers via decentralized L2 rollups.
 
 ---
 
@@ -285,7 +285,7 @@ Sublyne builds on established research:
 - ✅ **ML optimization** (15-20% additional throughput)
 
 ### Real-World Impact
-- ✅ **$267B/year savings** for migrant workers
+- ✅ **$25B/year savings** for migrant workers
 - ✅ **40% fee reduction** in cross-border payments
 - ✅ **True decentralization** (not just wealthy entities)
 
